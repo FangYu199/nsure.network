@@ -144,7 +144,7 @@
                         h3 {
                             font-size: 100px;
                             font-weight: bold;
-                            color: #75FFBE;
+                            color: #13c7fd;
                             line-height: 50px;
                            margin-bottom: 20px;
                         }
@@ -154,7 +154,7 @@
                             font-size: 24px;
                             font-weight: 400;
                             line-height: 1;
-                            color: #75FFBE;
+                            color: #13c7fd;
 
                         }
                     }
@@ -174,7 +174,7 @@
                         width: 10px;
                         height: 10px;
                         border-radius: 100px;
-                        background-color: #75FFBE;
+                        background-color: #13c7fd;
                     }
                     span:last-child{
                         margin-top: 30px;
@@ -189,14 +189,14 @@
                 height: 100px;
                 /*margin: 0 auto;*/
                 width: 630px;
-                border: 3px #75FFBE solid;
+                border: 3px #13c7fd solid;
                 border-radius: 100px;
                 box-sizing: border-box;
 
 
                 font-size: 36px;
                 font-weight: bold;
-                color: #75FFBE;
+                color: #13c7fd;
                 line-height: 100px;
                 text-align: center;
 
