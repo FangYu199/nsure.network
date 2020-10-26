@@ -36,8 +36,9 @@
                     </div>
                 </li>
             </ul>
-            <h4 class="bottom_button">Swap USDC for Nsure Tokens
-            </h4>
+            <!--<h4 class="bottom_button">Swap USDC for Nsure Tokens-->
+            <!--</h4>-->
+            <a href="https://lbp.nsure.network/" target="_Blank" class="bottom_button">Swap USDC for Nsure Tokens</a>
         </div>
     </div>
 </template>
@@ -184,6 +185,8 @@
 
 
             .bottom_button {
+
+                TEXT-DECORATION:none;
                 margin-left: 50px;
 
                 height: 100px;
