@@ -72,7 +72,9 @@
 <style lang="less" scoped>
     .we-do-wrapper {
         background-color: #00111b;
-
+h1{
+    text-align: center;
+}
         ul {
             display: flex;
             flex-wrap:wrap;

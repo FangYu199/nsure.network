@@ -2,7 +2,7 @@
     <div class="poster">
         <div class="box">
             <h3>Join Liquidity Bootstrapping Pool (LBP) for Nsure</h3>
-            <p>TGE on october 28th 11:00 UTC</p>
+            <p>TGE on october <br>28th 11:00 UTC</p>
             <ul>
                 <li>
                     <div>
@@ -84,7 +84,7 @@
 
 <style lang="less" scoped>
     .poster {
-        height: 90vh;
+        height: 100vh;
         background-image: url("../assets/images/poster_bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -104,7 +104,8 @@
             box-sizing: border-box;
             flex-direction: column;
             margin: auto 0;
-            text-align: center;
+            text-align: start;
+            align-items: start;
             justify-content: space-around;
 
             h3 {
@@ -116,9 +117,11 @@
 
             p {
                 font-size: 60px;
+                margin-left: 50px;
+
                 font-family: "ArialMT";
-                text-align: center;
                 font-weight: 400;
+                text-align: inherit;
                 color: white;
                 box-sizing: border-box;
             }
@@ -127,6 +130,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin-left: 50px;
 
                 li {
 
@@ -141,14 +145,15 @@
                             font-size: 100px;
                             font-weight: bold;
                             color: #75FFBE;
-                            line-height: 72px;
-                            margin: 10px 0;
+                            line-height: 50px;
+                           margin-bottom: 20px;
                         }
 
                         h4 {
 
                             font-size: 24px;
                             font-weight: 400;
+                            line-height: 1;
                             color: #75FFBE;
 
                         }
@@ -157,10 +162,12 @@
                 }
 
                 .point {
-                    width: 70px;
+                    width: 30px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    padding-bottom: 42px;
+                    box-sizing: border-box;
 
                     span {
                         display: block;
@@ -170,15 +177,17 @@
                         background-color: #75FFBE;
                     }
                     span:last-child{
-                        margin-top: 20px;
+                        margin-top: 30px;
                     }
                 }
             }
 
 
             .bottom_button {
-                height: 120px;
-                margin: 0 auto;
+                margin-left: 50px;
+
+                height: 100px;
+                /*margin: 0 auto;*/
                 width: 630px;
                 border: 3px #75FFBE solid;
                 border-radius: 100px;
@@ -188,7 +197,7 @@
                 font-size: 36px;
                 font-weight: bold;
                 color: #75FFBE;
-                line-height: 120px;
+                line-height: 100px;
                 text-align: center;
 
             }
