@@ -1,47 +1,41 @@
 <template>
     <div class="poster">
-        <img src="../assets/images/center_ball.png" alt="">
         <div class="box">
             <h3>Join Liquidity Bootstrapping Pool (LBP) for Nsure</h3>
-            <div class="center">
-
-                <div class="tilan">
-                    <p>TGE on october <br> 22th 12:00</p>
-                    <img src="../assets/images/center_line.png" alt="">
-                    <div class="right">
-                        <div class="top">
-                            <img src="../assets/images/top_tighe.png" alt="">
-                            <h5>TGE date TBA</h5>
-                        </div>
-                        <ul>
-                            <li>
-                                <div>
-                                    <h3>{{days}}</h3>
-                                    <h4>DAYS</h4>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3>{{hours}}</h3>
-                                    <h4>HOURS</h4>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3>{{min}}</h3>
-                                    <h4>MINUTES</h4>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3>{{seconds}}</h3>
-                                    <h4>SECONDS</h4>
-                                </div>
-                            </li>
-                        </ul>
+            <p>TGE on october 28th 11:00 UTC</p>
+            <ul>
+                <li>
+                    <div>
+                        <h3>{{days}}</h3>
+                        <h4>DAYS</h4>
                     </div>
-                </div>
-            </div>
+                </li>
+                <li class="point"><span></span><span></span></li>
+                <li>
+                    <div>
+                        <h3>{{hours}}</h3>
+                        <h4>HOURS</h4>
+                    </div>
+                </li>
+                <li class="point"><span></span><span></span></li>
+
+
+                <li>
+                    <div>
+                        <h3>{{min}}</h3>
+                        <h4>MINUTES</h4>
+                    </div>
+                </li>
+                <li class="point"><span></span><span></span></li>
+
+
+                <li>
+                    <div>
+                        <h3>{{seconds}}</h3>
+                        <h4>SECONDS</h4>
+                    </div>
+                </li>
+            </ul>
             <h4 class="bottom_button">Swap ETH for Nsure Tokens
             </h4>
         </div>
@@ -57,7 +51,7 @@
                 hours: '--',
                 min: '--',
                 seconds: '--',
-                endDate: new Date('2020/10/26')
+                endDate: new Date('2020/10/28')
             };
         },
         mounted: function () {
@@ -69,7 +63,7 @@
                 const now = new Date().valueOf();
                 const msec = end - now;
                 if (msec < 0) {
-                    return this.date_ = `End`;
+                    return this.date_ = `Ended`;
                 }
                 let day = parseInt((msec / 1000 / 60 / 60 / 24).toString());
                 let hr = parseInt((msec / 1000 / 60 / 60 % 24).toString()) + day * 24;
@@ -90,37 +84,101 @@
 
 <style lang="less" scoped>
     .poster {
-        height: 535px;
-        background-image: url('../assets/images/poster_bg.jpg');
-        background-color: #19264E;
+        height: 90vh;
+        background-image: url("../assets/images/poster_bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
-        position: relative;
-
-        img {
-            width: 586px;
-            height: 535px;
-        }
+        background-position: right;
+        padding: 0 2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-transform: uppercase;
 
         .box {
-            position: absolute;
-            right: 5%;
-            display: flex;
             top: 0;
             bottom: 0;
-            margin: auto 0;
+            height: 100%;
+            display: flex;
+            padding: 10% 0;
+            box-sizing: border-box;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            margin: auto 0;
+            text-align: center;
+            justify-content: space-around;
 
             h3 {
                 color: white;
-                font-size: 36px;
+                font-size: 34px;
+                font-family: "Arial BoldMT";
+                font-weight: bold;
             }
+
+            p {
+                font-size: 60px;
+                font-family: "ArialMT";
+                text-align: center;
+                font-weight: 400;
+                color: white;
+                box-sizing: border-box;
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                li {
+
+                    div {
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        h3 {
+                            font-size: 100px;
+                            font-weight: bold;
+                            color: #75FFBE;
+                            line-height: 72px;
+                            margin: 10px 0;
+                        }
+
+                        h4 {
+
+                            font-size: 24px;
+                            font-weight: 400;
+                            color: #75FFBE;
+
+                        }
+                    }
+
+                }
+
+                .point {
+                    width: 70px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    span {
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 100px;
+                        background-color: #75FFBE;
+                    }
+                    span:last-child{
+                        margin-top: 20px;
+                    }
+                }
+            }
+
 
             .bottom_button {
                 height: 120px;
+                margin: 0 auto;
                 width: 630px;
                 border: 3px #75FFBE solid;
                 border-radius: 100px;
@@ -135,102 +193,6 @@
 
             }
 
-            .center {
-                height: 240px;
-                width: 1157px;
-                margin: 28px 0 22px 0;
-                background-image: url("../assets/images/poster_cen.png");
-                background-size: contain;
-                background-position: center;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                .tilan {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-
-                    p {
-                        /*width: 423px;*/
-                        font-size: 50px;
-                        font-family: Arial;
-                        text-align: center;
-                        font-weight: 400;
-                        color: white;
-                        line-height: 72px;
-                        flex: 1;
-                        padding-left: 20px;
-                        box-sizing: border-box;
-                    }
-
-                    img {
-                        height: 135px;
-                        width: 1px;
-                    }
-
-                    .right {
-                        padding: 0 16px;
-                        box-sizing: border-box;
-                        flex: 2;
-
-                        .top {
-
-                            display: flex;
-
-                            img {
-                                width: 68px;
-                                height: 17px;
-                                display: block;
-                                align-items: center;
-                            }
-
-                            h5 {
-                                margin-left: 10px;
-                                color: white;
-                                font-size: 16px;
-                                height: 16px;
-                            }
-                        }
-
-                        ul {
-                            display: flex;
-
-                            li {
-                                margin-right: 70px;
-
-                                div {
-                                    text-align: center;
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    justify-content: center;
-
-                                    h3 {
-                                        font-size: 100px;
-                                        font-weight: bold;
-                                        color: #75FFBE;
-                                        line-height: 72px;
-                                        margin: 10px 0;
-                                    }
-
-                                    h4 {
-
-                                        font-size: 24px;
-                                        font-weight: 400;
-                                        color: #75FFBE;
-
-                                    }
-                                }
-
-                            }
-                        }
-                    }
-                }
-            }
         }
 
 
