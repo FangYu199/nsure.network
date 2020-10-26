@@ -88,7 +88,7 @@
         height: 100vh;
         background-image: url("../assets/images/poster_bg.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
         background-position: right;
         padding: 0 2%;
         display: flex;
