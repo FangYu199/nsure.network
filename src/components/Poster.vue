@@ -36,7 +36,7 @@
                     </div>
                 </li>
             </ul>
-            <h4 class="bottom_button">Swap ETH for Nsure Tokens
+            <h4 class="bottom_button">Swap USDC for Nsure Tokens
             </h4>
         </div>
     </div>
@@ -51,7 +51,7 @@
                 hours: '--',
                 min: '--',
                 seconds: '--',
-                endDate: new Date('2020/10/28')
+                endDate: new Date('2020/10/28 11:00 UTC+8')
             };
         },
         mounted: function () {
@@ -66,7 +66,7 @@
                     return this.date_ = `Ended`;
                 }
                 let day = parseInt((msec / 1000 / 60 / 60 / 24).toString());
-                let hr = parseInt((msec / 1000 / 60 / 60 % 24).toString()) + day * 24;
+                let hr = parseInt((msec / 1000 / 60 / 60 % 24).toString());
                 let min = parseInt((msec / 1000 / 60 % 60).toString());
                 let sec = parseInt((msec / 1000 % 60).toString());
                 this.days = day > 9 ? day : '0' + day;
@@ -100,7 +100,7 @@
             bottom: 0;
             height: 100%;
             display: flex;
-            padding: 10% 0;
+            padding: 5% 0;
             box-sizing: border-box;
             flex-direction: column;
             margin: auto 0;
