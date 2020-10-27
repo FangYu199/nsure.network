@@ -101,7 +101,7 @@
             bottom: 0;
             height: 100%;
             display: flex;
-            padding: 5% 0;
+            padding:2% 0  8% 0;
             box-sizing: border-box;
             flex-direction: column;
             margin: auto 0;
@@ -111,13 +111,13 @@
 
             h3 {
                 color: white;
-                font-size: 34px;
+                font-size: 32px;
                 font-family: "Arial BoldMT";
                 font-weight: bold;
             }
 
             p {
-                font-size: 60px;
+                font-size: 58px;
                 margin-left: 50px;
 
                 font-family: "ArialMT";
@@ -143,7 +143,7 @@
                         justify-content: center;
 
                         h3 {
-                            font-size: 100px;
+                            font-size: 98px;
                             font-weight: bold;
                             color: #13c7fd;
                             line-height: 50px;
@@ -152,7 +152,7 @@
 
                         h4 {
 
-                            font-size: 24px;
+                            font-size: 22px;
                             font-weight: 400;
                             line-height: 1;
                             color: #13c7fd;
@@ -197,7 +197,7 @@
                 box-sizing: border-box;
 
 
-                font-size: 36px;
+                font-size: 34px;
                 font-weight: bold;
                 color: #13c7fd;
                 line-height: 100px;
