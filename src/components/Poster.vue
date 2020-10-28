@@ -52,7 +52,7 @@
                 hours: '--',
                 min: '--',
                 seconds: '--',
-                endDate: new Date('2020/10/28 11:00 UTC+8')
+                endDate: new Date('2020/10/28 11:00 UTC+0')
             };
         },
         mounted: function () {
@@ -64,6 +64,7 @@
                 const now = new Date().valueOf();
                 const msec = end - now;
                 if (msec < 0) {
+                    console.log(123);
                     this.days = '00';
                     this.hours = '00';
                     this.min = '00';
