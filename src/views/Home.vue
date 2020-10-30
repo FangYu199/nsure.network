@@ -2,7 +2,7 @@
   <div class="home">
     <!-- banner -start -->
 
-    <Poster/>
+   
     <div class="banner">
       <div class="banner-content">
         <div class="banner-content-item banner-content-item-left">
@@ -114,13 +114,12 @@
 </template>
 
 <script>
-  import Poster from '../components/Poster'
+ 
   import mechanism from '../components/mechanism'
 
   export default {
   name: 'Home',
     components:{
-      Poster,
       mechanism
     },
   data() {
